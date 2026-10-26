@@ -53,8 +53,10 @@
 [class*="sidebarList"] [class*="scroller"],
 [class*="container"][class*="themed"],
 [class*="nowPlayingColumn"],
-[class*="scroller"],
-[class*="contentHeader"],
+[class*="scroller_"],
+[class*="contentHeader"]
+[class*="panels"],
+[class*="channelTextArea"],
 #vc-spotify-player{
   background-color: var(--Body-Background-Color);
 }
@@ -62,7 +64,7 @@
 /*Let us be able to see serveer banners*/
 [class*="sidebarList"] > [class*="container"],
 [class*="sidebarList"] [class*="scroller"],
-[class*="sidebarList"] [class*="header"] {
+[class*="sidebarList"] [class*="header"]{
   background-color: transparent !important;
 }
 
@@ -70,7 +72,8 @@
 [class*="sidebar"],
 [class*="title"],
 [class*="panels"],
-[class*="searchBar"]{
+[class*="searchBar"],
+[class*="channelTextArea"]{
   border-color: var(--Discord-Borders-Colors);
 }
 
