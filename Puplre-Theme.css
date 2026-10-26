@@ -1,0 +1,97 @@
+/*-----------------------------------------------------------------------------------------------|
+* @MySoftie - This would be my first Discord theme that i made                                   |
+* I made it as a template for others, so they can easily change the color of things in discord   |
+* Just change it to the color that you want                                                      |
+* It defult as Black & Purple as that the color I wanted                                         |
+|-----------------------------------------------------------------------------------------------*/
+
+/*THIS IS WHERE YOU CHANGE THE COLOR OF STUFF*/
+:root{
+   --Main-Text-Color: rgb(143, 6, 145);
+   --Profile-Text-Color: rgb(125, 55, 55);
+   --Body-Background-Color: rgb(0, 0, 0);
+   --Discord-Borders-Colors: rgb(58, 0, 103);
+   --Server-Folders-Colors: rgb(31, 18, 41);
+   --Buttons-Colors: rgb(84, 12, 93);
+   --Button-Hover-Color: rgb(4, 35, 93);
+   --Logos-Colors: rgb(140, 140, 140);
+}
+
+/* Main Text Color
+   channel, header, tab, and chat text*/
+[class*="markup"],
+[class*="headerText"],
+[class*="heading"],
+[class*="defaultColor"],
+[class*="title"],
+[class*="text-xs"],
+[class*="text-sm"],
+[class*="text-md"],
+[class*="text-lg"]{
+  color: var(--Main-Text-Color);
+}
+
+/* Profile Text color
+   This change status, bio & username color*/
+[class*="outer_"] [class*="markup"] *,
+[class*="outer_"] [class*="text"]{
+  color: var(--Profile-Text-Color);
+}
+
+/*Thsi change the color of main body*/
+[class*="sidebar"],
+[class*="chatContent"],
+[class*="guilds"],
+[class*="privateChannels"],
+[class*="member"],
+[class*="peopleColumn"],
+[class*="tabBody"],
+[class*="panels"],
+[class*="themedBackground"],
+[class*="search"],
+[class*="searchResult"],
+[class*="sidebarList"] [class*="scroller"],
+[class*="container"][class*="themed"],
+[class*="nowPlayingColumn"],
+[class*="scroller"],
+[class*="contentHeader"],
+#vc-spotify-player{
+  background-color: var(--Body-Background-Color);
+}
+
+/*Let us be able to see serveer banners*/
+[class*="sidebarList"] > [class*="container"],
+[class*="sidebarList"] [class*="scroller"],
+[class*="sidebarList"] [class*="header"] {
+  background-color: transparent !important;
+}
+
+/*Colors of Discords Border*/
+[class*="sidebar"],
+[class*="title"],
+[class*="panels"],
+[class*="searchBar"]{
+  border-color: var(--Discord-Borders-Colors);
+}
+
+/*Just the Backgroud of Server folder*/
+[class*="folderIconWrapper"]{
+  background-color: var(--Server-Folders-Colors);
+}
+
+/*Background Color of the 'Discover' 'add server' and The DM button*/
+[class*="guilds"] [class*="circleIconButton"] {
+  background-color: var(--Buttons-Colors);
+}
+
+/*Whenever you hover over a button*/
+[class*="guilds"] [class*="wrapper"]:hover [class*="childWrapper"],
+[class*="guilds"] [class*="circleIconButton"]:hover{
+  background-color: var(--Button-Hover-Color);
+}
+
+/*Color of Logos*/
+[class*="button"] svg,
+[class*="tab"] svg{
+  color: var(--Logos-Colors);
+}
