@@ -17,6 +17,15 @@
    --Logos-Colors: rgb(140, 140, 140);
 }
 
+/*Nice quote*/
+.placeholder__1b31f.slateTextArea_ec4baf{
+  font-size: 0;
+}
+.placeholder__1b31f.slateTextArea_ec4baf::before{
+  content: "Take Life one Step at a Time";
+  font-size: 16px;
+}
+
 /* Main Text Color
    channel, header, tab, and chat text*/
 [class*="markup"],
@@ -43,7 +52,9 @@
 [class*="chatContent"],
 [class*="guilds"],
 [class*="privateChannels"],
-[class*="member"],
+[class*="memberInner"],
+[class*="member_c"],
+[class*="members"],
 [class*="peopleColumn"],
 [class*="tabBody"],
 [class*="panels"],
@@ -73,6 +84,9 @@
 [class*="title"],
 [class*="panels"],
 [class*="searchBar"],
+[class*="container_c"],
+[class*="header"],
+[role*="separator"],
 [class*="channelTextArea"]{
   border-color: var(--Discord-Borders-Colors);
 }
