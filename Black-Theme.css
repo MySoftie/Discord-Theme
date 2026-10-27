@@ -1,20 +1,21 @@
 /*-----------------------------------------------------------------------------------------------|
+* You do not have permission to remove my credits
 * @MySoftie - This would be my first Discord theme that i made                                   |
 * I made it as a template for others, so they can easily change the color of things in discord   |
 * Just change it to the color that you want                                                      |
-* It defult as Black & Purple as that the color I wanted                                         |
+* It defult as Black & White as that the color I wanted                                         |
 |-----------------------------------------------------------------------------------------------*/
 
 /*THIS IS WHERE YOU CHANGE THE COLOR OF STUFF*/
 :root{
-   --Main-Text-Color: rgb(143, 6, 145);
-   --Profile-Text-Color: rgb(125, 55, 55);
+   --Main-Text-Color: rgb(231, 231, 231);
+   --Profile-Text-Color: #;
    --Body-Background-Color: rgb(0, 0, 0);
-   --Discord-Borders-Colors: rgb(58, 0, 103);
-   --Server-Folders-Colors: rgb(31, 18, 41);
-   --Buttons-Colors: rgb(84, 12, 93);
-   --Button-Hover-Color: rgb(4, 35, 93);
-   --Logos-Colors: rgb(140, 140, 140);
+   --Discord-Borders-Colors: rgb(228, 228, 228);
+   --Server-Folders-Colors: rgb(20, 14, 24);
+   --Buttons-Colors: rgb(40, 40, 40);
+   --Button-Hover-Color: rgb(0, 7, 21);
+   --Logos-Colors: rgb(213, 213, 213);
 }
 
 /*Nice quote*/
@@ -87,7 +88,9 @@
 [class*="container_c"],
 [class*="header"],
 [role*="separator"],
-[class*="channelTextArea"]{
+[class*="channelTextArea"],
+[class*="chat"][class*="chat"],
+[class*="page__5e434"] [class*="container__"]{
   border-color: var(--Discord-Borders-Colors);
 }
 
