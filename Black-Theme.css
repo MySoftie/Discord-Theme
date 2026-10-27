@@ -9,7 +9,7 @@
 /*THIS IS WHERE YOU CHANGE THE COLOR OF STUFF*/
 :root{
    --Main-Text-Color: rgb(231, 231, 231);
-   --Profile-Text-Color: #;
+   --Profile-Text-Color: white;
    --Body-Background-Color: rgb(0, 0, 0);
    --Discord-Borders-Colors: rgb(228, 228, 228);
    --Server-Folders-Colors: rgb(20, 14, 24);
