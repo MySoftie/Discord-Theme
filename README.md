@@ -17,9 +17,15 @@ All themes I use will have a root, where you can easily change the color
 ```
 
 ## How to add just the add-on
-If you want my add-on click on the file that has the add-on you wish, in the top header near the credit will have a link like this 
-@import url("#");
-copy and paste that at the top of your code
+If you want some of my add-on here the steps
+
+1. **Find the File:** Click on the Add-on file you want in this repository
+2. **Copy the Link:** Look at the top header near my credits and copy the link that looks like this:
+   ```css
+   @import url("#");
+   ```
+3. **Paste the Code:** Paste that line at the top of of you Css
+
 
 ## Terms of Use & Attribution
 * **Permissions:** You are completely free to use, edit, and build upon this my code
