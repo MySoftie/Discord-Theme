@@ -9,6 +9,7 @@
   font-size: 16px;
 }*/
 
+
 /*Text bar when you do have permision to talk*/
 .channelTextArea__74017:not(.channelTextAreaDisabled__74017) .placeholder__1b31f{
   font-size: 0px;
@@ -23,6 +24,6 @@
   font-size: 0px;
 }
 .channelTextAreaDisabled__74017 .placeholder__1b31f::before{
-  content: "Take Life one Step at a Time";
+  content: "Chill your notifications, you cant type here";
   font-size: 16px;
 }
