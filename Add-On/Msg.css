@@ -1,13 +1,3 @@
-/*not fully done add-on to change msg text 
-
-
-.placeholder__1b31f.slateTextArea_ec4baf{
-  font-size: 0;
-}
-.placeholder__1b31f.slateTextArea_ec4baf::before{
-  content: "Take Life one Step at a Time";
-  font-size: 16px;
-}*/
 
 
 /*Text bar when you do have permision to talk*/
@@ -20,10 +10,10 @@
 }
 
 /*The msg in the textbar when your in a channel you don't have perm to speak in*/
-.channelTextAreaDisabled__74017 .placeholder__1b31f {
+.channelTextAreaDisabled__74017 .placeholder__1b31f{
   font-size: 0px;
 }
 .channelTextAreaDisabled__74017 .placeholder__1b31f::before{
-  content: "Chill your notifications, you cant type here";
+  content: "Chill your notifications, you can't type here";
   font-size: 16px;
 }
