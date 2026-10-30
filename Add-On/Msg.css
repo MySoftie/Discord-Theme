@@ -26,8 +26,10 @@
   font-size: 0px;
 }
 
-/*Will be added a who is typing, and channel tht ur unable to see msg*/
 .channelTextAreaDisabled__74017 .placeholder__1b31f::before{
   content: var(--Disable-Msg-Text);
   font-size: 16px;
 }
+
+
+/*Will be added a who is typing, and channel tht ur unable to see msg*/
