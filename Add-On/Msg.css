@@ -6,8 +6,8 @@
 @import url("https://raw.githubusercontent.com/MySoftie/Discord-Theme/refs/heads/main/Add-On/Remove%2C%20Nitro%2C%20Shop%2C%20Quest%20Button.css");
 */
 
-
-root{
+/*This is where you can edit the msgs*/
+:root{
   --Allow-Msg-Text: "Take Life one Step at a Time";
   --Disable-Msg-Text: "Chill your notifications, you can't type here";
 }
@@ -17,7 +17,7 @@ root{
   font-size: 0px;
 }
 .channelTextArea__74017:not(.channelTextAreaDisabled__74017) .placeholder__1b31f::before{
-  content: "Take Life one Step at a Time";
+  content: var(--Allow-Msg-Text);
   font-size: 16px;
 }
 
@@ -26,6 +26,6 @@ root{
   font-size: 0px;
 }
 .channelTextAreaDisabled__74017 .placeholder__1b31f::before{
-  content: "Chill your notifications, you can't type here";
+  content: var(--Disable-Msg-Text);
   font-size: 16px;
 }
