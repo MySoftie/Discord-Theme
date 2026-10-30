@@ -19,14 +19,6 @@
    --Logos-Colors: rgb(213, 213, 213);
 }
 
-/*Nice quote*/
-.placeholder__1b31f.slateTextArea_ec4baf{
-  font-size: 0;
-}
-.placeholder__1b31f.slateTextArea_ec4baf::before{
-  content: "Take Life one Step at a Time";
-  font-size: 16px;
-}
 
 /* Main Text Color
    channel, header, tab, and chat text*/
