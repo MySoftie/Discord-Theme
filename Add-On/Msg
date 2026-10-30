@@ -8,3 +8,14 @@ not fully done add-on to change msg text
   content: "Take Life one Step at a Time";
   font-size: 16px;
 }
+
+/*The msg in the textbar when your in a channel you don't have perm to speak in*/
+.channelTextArea__74017:not(.channelTextAreaDisabled__74017) .placeholder__1b31f {
+
+.channelTextAreaDisabled__74017 .placeholder__1b31f {
+  font-size: 0;
+}
+.channelTextAreaDisabled__74017 .placeholder__1b31f::Before{
+  content: "Take Life one Step at a Time";
+  font-size: 16px;
+}
