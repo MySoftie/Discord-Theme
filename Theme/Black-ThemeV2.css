@@ -6,3 +6,132 @@
  * @Description     This is just the remake of my first theme but with better coding
  * DO NOT TOUCH CREDITS
 */
+:root{  /*Easy recolor your discord using this*/
+  --Icons: #fff;
+  --Folder: Blue;
+  --Button: red;
+  --Body: Black;
+  --Border: White;
+}
+
+:root{ /*Change only if you want Specific things to be diff color*/
+  /*
+  --Channel-Icon: ;
+  --Folder-Icon: ;
+  --Dm-Button-Icon: ;
+  --Button-Icon: ;
+  --Dm-Button-Background: ;
+  --Chat-Body: ;
+  --Member-List-Body: ;
+  --Member-List-Profile-Body: ;
+  --Channel-Body: ;
+  --Msg-Bar: ;
+  --Msg-Bar-Border: ;
+  --Server-Discover-Button: ;
+  --Member-List-Border: ;
+  --Search-Bar-Border: ;
+  --Search-Bar-Body: ;
+  --Server-Name-Header-Border: ;
+  --Server-Name-Header-Body: ;
+  --Main--Header-Border: ;
+  --Main--Header-Body: ; 
+  --Main-Discord-Header-Body: ;
+  --Search-Convoerstar-Header-Border: ;
+  --Search-Convoerstar-Header-body: ;
+  */
+}
+
+
+
+
+.icon__2ea32 path{  /*This is the icon for like channel*/
+  fill: var(--Channel-Icon, var(--Icons));
+}
+
+.folderIcon__48112{   /*Folder background*/
+  background-color: var(--Folder);
+}
+
+.folderIcon__48112 path{   /*Change the icon of the folder*/
+  fill: var(--Folder-Icon, var(--Icons));
+}
+
+.childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8{  /*like the dm home button background*/
+  background-color: var(--Dm-Button-Background, var(--Button))
+}
+
+.childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 path{  /*The icon of the home button*/
+  fill: var(--Dm-Button-Icon, var(--Icons));
+}
+
+.chatContent_f75fb0{ /* chat body*/
+  background-color: var(--Chat-Body, var(--Body))
+}
+
+.members_c8ffbb{  /*Member list body*/
+  background-color: var(--Member-List-Body, var(--Body))
+}
+.member__5d473{ /*member profile body idk*/
+  background-color: var(--Member-List-Profile-Body, var(--Body))
+}
+.container_c8ffbb{  /*border for member list*/
+  border-color: var(--Member-List-Border, var(--Border))
+}
+
+.scroller__629e4{ /*channel list*/
+  background-color: var(--Channel-Body, var(--Body))
+}
+
+.scrollableContainer__74017.themedBackground__74017{ /*msg bar*/
+  background-color: var(--Msg-Bar, var(--Body))
+}
+.channelTextArea_f75fb0{  /*msg bar border*/
+  border-color: var(--Msg-Bar-Border, var(--Border))
+}
+
+.circleIconButton__5bc7e{   /*Buttons background*/
+background-color: var(--Server-Discover-Button, var(--Button))
+}
+
+.circleIcon__5bc7e path{  /*Buttons Icon*/
+  fill: var(--Button-Icon, var(--Icons));
+}
+
+.searchBar_c322aa.searchBar__25bec{ /*search */
+  background-color: var(--Search-Bar-Body, var(--Body));
+  border-color: var(--Search-Bar-Border, var(--Border));
+}
+
+.header_f37cb1{  /*server like header like the name area*/
+  background-color: var(--Server-Name-Header-Body, var(--Body));
+  border-color: var(--Server-Name-Header-Border, var(--Border));
+}
+
+
+.container__9293f.themed__9293f{ /*so in friend dm it would be there name, call button like all the button & in server just like top bar with pinned msg and stuff*/
+  background-color: var(--Main-Header-Body, var(--Body));
+  border-color: var(--Main--Header-Border, var(--Border));
+}
+
+
+.wrapper_ef3116{  /*Server list*/
+  background-color: var(--Server-List-Body, var(--Body));
+}
+
+.bar_c38106{ /*Very top header*/
+  background-color: var(--Main-Discord-Header-Body, var(--Body));
+}
+
+.searchBar_e6b769{  /*edit the find or start a converstion header area*/
+  background-color: var(--Search-Convoerstar-Header-Body, var(--Body));
+  border-color: var(--Search-Convoerstar-Header-Border, var(--Border));
+}
+
+/*edit the find or start a converstion button*/
+.buttonChildrenWrapper_a22cb0{
+  background-color: #;    /*DO lATER*/
+}
+.private-channels-uid_20476{
+  background-color: var(--Search-Convoerstar-Header-Body, var(--Body));
+  border-color: var(--Search-Convoerstar-Header-Border, var(--Border));
+}
