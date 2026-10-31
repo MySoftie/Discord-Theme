@@ -1,16 +1,8 @@
-/*
- * @project     Discord Themes
- * @author      Angel (@MySoftie)
- * @authorlink      https://github.com/MySoftie
- * @projectlink     https://github.com/MySoftie/Discord-Theme
- * @Description     This is just the remake of my first theme but with better coding
- * DO NOT TOUCH CREDITS
-*/
 :root{  /*Easy recolor your discord using this*/
   --Icons: #fff;
   --Folder: Blue;
   --Button: red;
-  --Body: Black;
+  --Body: rgb(179, 55, 55);
   --Border: White;
 }
 
@@ -33,11 +25,15 @@
   --Search-Bar-Body: ;
   --Server-Name-Header-Border: ;
   --Server-Name-Header-Body: ;
+  --Server-List-Body: 
   --Main--Header-Border: ;
   --Main--Header-Body: ; 
   --Main-Discord-Header-Body: ;
   --Search-Convoerstar-Header-Border: ;
   --Search-Convoerstar-Header-body: ;
+  --Search-Tab-Body: ;
+  --Search-Tab-Header-Body: ;
+  --Search-filters-Sort-Buttons: ;
   */
 }
 
@@ -97,10 +93,6 @@ background-color: var(--Server-Discover-Button, var(--Button))
   fill: var(--Button-Icon, var(--Icons));
 }
 
-.searchBar_c322aa.searchBar__25bec{ /*search */
-  background-color: var(--Search-Bar-Body, var(--Body));
-  border-color: var(--Search-Bar-Border, var(--Border));
-}
 
 .header_f37cb1{  /*server like header like the name area*/
   background-color: var(--Server-Name-Header-Body, var(--Body));
@@ -118,20 +110,88 @@ background-color: var(--Server-Discover-Button, var(--Button))
   background-color: var(--Server-List-Body, var(--Body));
 }
 
+.sidebarList__5e434.sidebarListRounded__5e434{ /*Server border*/
+  border-color: #fff;
+}
+.sidebar__5e434{  /*put same root as server in this one */
+}
+
+
+.chat_f75fb0{  /*header border*/
+  border-color: #fff !important;
+}
+
 .bar_c38106{ /*Very top header*/
   background-color: var(--Main-Discord-Header-Body, var(--Body));
 }
 
-.searchBar_e6b769{  /*edit the find or start a converstion header area*/
-  background-color: var(--Search-Convoerstar-Header-Body, var(--Body));
-  border-color: var(--Search-Convoerstar-Header-Border, var(--Border));
-}
+
 
 /*edit the find or start a converstion button*/
 .buttonChildrenWrapper_a22cb0{
   background-color: #;    /*DO lATER*/
 }
-.private-channels-uid_20476{
+
+
+.scroller__99e7c{ /*Dm list*/
+  background-color: var(--Dm-list-Body, var(--Body));
+  border-color: var(--Dm-list-Border, var(--Border));
+}
+
+.scroller_a98f3b{ /*When you search a msg the tab that pop up*/
+  background-color: var(--Search-Tab-Body, var(--Body));
+}
+.searchHeader_ae7890{
+  background-color: var(--Search-Tab-Header-Body, var(--Body));
+}
+
+.buttonChildrenWrapper_a22cb0{  /*in seach tab the filter & sort button*/
+  background-color: var(--Search-filters-Sort-Buttons, var(--Button))
+}
+
+
+.wrapper_e131a9{
+  border-color: #fff !important;
+}
+
+.sidebarResizeHandle__5e434{ /*weird border*/
+  background-color: rgb(255, 255, 255);
+  width: 1px;
+}
+
+
+
+/*Profile Area*/
+
+
+.container__37e49{ /*Little Profile Bottom Left*/
+  background-color: red;
+}
+.panels__5e434{ /*Profile Border*/
+  border-color: #fff;
+}
+/*NOTE EDIT THIS*/
+.sidebar__5e434{ /*This change the Background, behind the Little Profile Bottom Left*/
+  background-color: red;
+  &::after{
+    background-color: red;
+  }
+}
+.container__2637a{  /*weird body*/
+  background-color: red;
+}
+
+
+/*Search*/
+
+.searchBar_c322aa.searchBar__25bec{ /*Search bar (One to look for msges)*/
+  background-color: var(--Search-Bar-Body, var(--Body));
+  border-color: var(--Search-Bar-Border, var(--Border));
+}
+
+.searchBar_e6b769{  /*Find or start a convo Header Area*/
   background-color: var(--Search-Convoerstar-Header-Body, var(--Body));
   border-color: var(--Search-Convoerstar-Header-Border, var(--Border));
 }
+
+/*code is not doen*/
