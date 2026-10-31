@@ -25,6 +25,9 @@ If you want some of my add-on here the steps
 ```
 3. Paste the Code: Paste that line at the top of you CSS
 
+## The Snippet
+Are code That I made & saving to put in a theme, it a small code, that itself is not a full theme
+
 
 ## Term & Credits
 * Permissions: You are completely free to use, edit & build up on my code
