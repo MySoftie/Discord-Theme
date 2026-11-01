@@ -1,5 +1,5 @@
 :root{  /*Easy recolor your discord using this*/
-  --Icons: #fff;
+  --Icons: #b7f400;
   --Folder: rgb(70, 5, 18);
   --Button: red;
   --Sub-Buttons: blue;
@@ -8,40 +8,51 @@
 }
 
 :root{ /*Change only if you want Specific things to be diff color*/
-  /*
-  --Channel-Icon: ;
-  --Folder-Icon: ;
-  --Dm-Button-Icon: ;
-  --Button-Icon: ;
-  --Dm-Button-Background: ;
-  --Chat-Body: ;
-  --Member-List-Body: ;
-  --Member-List-Profile-Body: ;
-  --Channel-Body: ;
-  --Msg-Bar: ;
-  --Msg-Bar-Border: ;
-  --Server-Discover-Button: ;
-  --Member-List-Border: ;
-  --Search-Bar-Border: ;
-  --Search-Bar-Body: ;
-  --Server-Name-Header-Border: ;
-  --Server-Name-Header-Body: ;
-  --Server-List-Body: 
-  --Main--Header-Border: ;
-  --Main--Header-Body: ; 
-  --Main-Discord-Header-Body: ;
-  --Search-Convoerstar-Header-Border: ;
-  --Search-Convoerstar-Header-body: ;
-  --Search-Tab-Body: ;
-  --Search-Tab-Header-Body: ;
-  --Folder-Group-Border: ;
-  --Main-Little-Profile-Bottom-Left-Bod: ;
-  --Sub-Little-Profile-Bottom-Left-Body: ;
-  --Main-Discord-Header-Border
-  --Channel-Border
-  Server-List-Border
-  --DM-List-Body
-  */
+
+
+  /* --DM-List-Body: ; */
+  /* --Chat-Body: ; */
+
+  /* --Channel-Body: ; */
+  /* --Channel-Border: ; */
+  /* --Channel-Icon: ; */
+
+  /* --Folder-Icon: ; */
+  /* --Folder-Group-Border: ; */
+
+  /* --Button-Icon: ; */
+  /* --Dm-Button-Icon: ; */
+  /* --Dm-Button-Background: ; */
+  /* --Server-Discover-Button: ; */
+
+  /* --Member-List-Body: ; */
+  /* --Member-List-Profile-Body: ; */
+
+  /*--Server-List-Border: ; */
+
+  /* --Search-Bar-Body: ; */
+  /* --Search-Bar-Border: ; */
+  /* --Server-Name-Header-Border: ; */
+  /* --Server-Name-Header-Body: ; */
+  /* --Server-List-Body: ; */
+  /* --Search-Convoerstar-Header-Border: ; */
+  /* --Search-Convoerstar-Header-body: ; */
+  /* --Search-Tab-Body: ; */
+  /* --Search-Tab-Header-Body: ; */
+
+  
+  /* --Msg-Bar: ; */
+  /* --Msg-Bar-Border: ; */
+  /* --Button-Padding-In-Msg-Bar-Add-Color */
+
+
+  /* --Main--Header-Border: ; */
+  /* --Main--Header-Body: ;  */
+  /* --Main-Discord-Header-Body: ; */
+  /* --Main-Discord-Header-Border: ; */
+
+  /* --Main-Little-Profile-Bottom-Left-Bod: ; */
+  /* --Sub-Little-Profile-Bottom-Left-Body: ; */
 }
 
 
@@ -53,7 +64,7 @@
 }
 
 .folderGroupBackground__48112{  /*Border Of Folders*/
-    border-color: var(--Folder-Group-Border, var(--Border))
+    border-color: var(--Folder-Group-Border, var(--Border));
 }
 
 .folderIcon__48112 path{   /*Icon of Server Folder*/
@@ -63,8 +74,14 @@
 
 
 /*Buttons*/
+
+
+.circleIcon__5bc7e path{  /*Buttons Icon*/
+  fill: var(--Button-Icon, var(--Icons));
+}
+
 .buttonChildrenWrapper_a22cb0{  /*Lot of Sub Buttons*/
-  background-color: var(--Sub-Buttons)
+  background-color: var(--Sub-Buttons);
 }
 
 .childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8{  /*The DM Button*/
@@ -75,28 +92,54 @@
   fill: var(--Dm-Button-Icon, var(--Icons));
 }
 
-.icon__2ea32 path{  /*Channel Icons*/
-  fill: var(--Channel-Icon, var(--Icons));
-}
-
 .buttonChildrenWrapper_a22cb0{  /*Find a Friend or Star a converstion Button/Search Body*/
   background-color: var(--Find-a-Friend-or-Start-converstion-Button, var(--Button));
 }
 
+.circleIconButton__5bc7e{   /*Server & Discover Buttons background*/
+background-color: var(--Server-Discover-Button, var(--Button));
+}
 
+
+.button_e6e74f{ /*Make a Color Padding for Emoji in the msg bar*/
+    background-color: var(--Button-Padding-In-Msg-Bar-Add-Color);
+    border-radius: 20%;
+}
+.expression-picker-chat-input-button{ /*Make a Color Padding for Emoji in the msg bar*/
+    background-color: var(--Button-Padding-In-Msg-Bar-Add-Color);
+    border-radius: 20%;
+}
+.container__5287f{ /*Make a Color Padding for Emoji in the msg bar*/
+    background-color: var(--Button-Padding-In-Msg-Bar-Add-Color);
+    border-radius: 20%;
+}
+
+.enabled__67645 { /*Make a Color Padding for Deafing & Setting Button*/
+    background-color: #b7f400;
+    fill: yellow;
+}
+
+
+
+
+
+/*Note to self when contuing working on this star here with the mute deafing & setting first as well fix the main discord header border, its 1:30am im gonna sleep*/
+.contents__201d5 .lottieIcon__5eb9b.lottieIconColors__5eb9b path{
+    fill: aqua;
+}
 
 /*Server Member List*/
 
 .members_c8ffbb{  /*Member list body*/
-  background-color: var(--Member-List-Body, var(--Body))
+  background-color: var(--Member-List-Body, var(--Body));
 }
 
 .member__5d473{ /*Member List Profile body*/
-  background-color: var(--Member-List-Profile-Body, var(--Body))
+  background-color: var(--Member-List-Profile-Body, var(--Body));
 }
 
 .container_c8ffbb{  /*Memeber List Border*/
-  border-color: var(--Member-List-Border, var(--Border))
+  border-color: var(--Member-List-Border, var(--Border));
 }
 
 
@@ -105,7 +148,7 @@
 /*Channel List*/
 
 .scroller__629e4{ /*Channel List Body*/
-  background-color: var(--Channel-Body, var(--Body))
+  background-color: var(--Channel-Body, var(--Body));
 }
 
 .icon__2ea32 path{  /*Channel List Icons*/
@@ -113,7 +156,7 @@
 }
 
 .sidebarResizeHandle__5e434{ /*Channel Border*/
-  background-color: var(--Channel-Border, var(--Border))
+  background-color: var(--Channel-Border, var(--Border));
   width: 1px;
 }
 
@@ -121,29 +164,16 @@
 
 
 
-/*Buttons*/
-.circleIconButton__5bc7e{   /*Server & Discover Buttons background*/
-background-color: var(--Server-Discover-Button, var(--Button))
-}
-
-.circleIcon__5bc7e path{  /*Buttons Icon*/
-  fill: var(--Button-Icon, var(--Icons));
-}
-
-.buttonChildrenWrapper_a22cb0{  /*Lot of Sub Buttons*/
-  background-color: var(--Sub-Buttons, var(--Button))
-}
-
 
 /*MSG Bar*/
 
 
 .scrollableContainer__74017.themedBackground__74017{ /*Msg Bar Body*/
-  background-color: var(--Msg-Bar, var(--Body))
+  background-color: var(--Msg-Bar, var(--Body));
 }
 
 .channelTextArea_f75fb0{  /*Msg Bar Border*/
-  border-color: var(--Msg-Bar-Border, var(--Border))
+  border-color: var(--Msg-Bar-Border, var(--Border));
 }
 
 
@@ -153,7 +183,7 @@ background-color: var(--Server-Discover-Button, var(--Button))
 /*Body/Border That is not already in a catgory*/
 
 .chatContent_f75fb0{ /*Chat Body*/
-  background-color: var(--Chat-Body, var(--Body))
+  background-color: var(--Chat-Body, var(--Body));
 }
 
 .chat_f75fb0{  /*Header border*/
@@ -165,7 +195,7 @@ background-color: var(--Server-Discover-Button, var(--Button))
 }
 
 .sidebarList__5e434.sidebarListRounded__5e434{ /*Server List border*/
-  border-color: var(--Server-List-Border, var(--Border))
+  border-color: var(--Server-List-Border, var(--Border));
 }
 
 .bar_c38106{ /*Very top header*/
@@ -183,8 +213,13 @@ background-color: var(--Server-Discover-Button, var(--Button))
 }
 
 .scroller__99e7c{   /*Dm List Body*/
-    background-color: var(--DM-List-Body, var(--Body))
+    background-color: var(--DM-List-Body, var(--Body));
 } 
+
+.icon__2ea32 path{  /*Channel Icons*/
+  fill: var(--Channel-Icon, var(--Icons));
+}
+
 
 
 /*Profile Area*/
@@ -198,12 +233,12 @@ background-color: var(--Server-Discover-Button, var(--Button))
 }
 
 .sidebar__5e434{ /*This change the Background, behind the Little Profile Bottom Left*/
-  background-color: var(--Sub-Little-Profile-Bottom-Left-Body, var(--Body));
+  background-color: var(--Sub-Little-Profile-Bottom-Left-Body, var(--Main-Little-Profile-Bottom-Left-Body, var(--Body)));
   &::after{
-    background-color: var(--Sub-Little-Profile-Bottom-Left-Body, var(--Body));
+    background-color: var(--Sub-Little-Profile-Bottom-Left-Body, var(--Main-Little-Profile-Bottom-Left-Body, var(--Body)));
   }
   &.container__2637a{
-    background-color: var(--Sub-Little-Profile-Bottom-Left-Body, var(--Body));
+    background-color: var(--Sub-Little-Profile-Bottom-Left-Body, var(--Main-Little-Profile-Bottom-Left-Body, var(--Body)));
   }
 }
 
@@ -230,4 +265,4 @@ background-color: var(--Server-Discover-Button, var(--Button))
 
 
 
-/*code is not doen*/
+/*code is not done*/
