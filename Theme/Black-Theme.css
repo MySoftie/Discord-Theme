@@ -3,26 +3,93 @@
  * @author      Angel (@MySoftie)
  * @authorlink      https://github.com/MySoftie
  * @projectlink     https://github.com/MySoftie/Discord-Theme
- * @Description     First Discord Theme I created. Just edit the root to change the colors 
+ * @Description     This is just the remake of my first theme but with better coding
  * DO NOT TOUCH CREDITS
 */
 
-/*THIS IS WHERE YOU CHANGE THE COLOR OF STUFF*/
-:root{
-   --Main-Text-Color: rgb(231, 231, 231);
-   --Profile-Text-Color: white;
-   --Body-Background-Color: rgb(0, 0, 0);
-   --Discord-Borders-Colors: rgb(228, 228, 228);
-   --Server-Folders-Colors: rgb(20, 14, 24);
-   --Buttons-Colors: rgb(40, 40, 40);
-   --Button-Hover-Color: rgb(0, 7, 21);
-   --Logos-Colors: rgb(213, 213, 213);
+
+:root{  /*Easy recolor your discord using this*/
+  --Icons: #e1e1e1;
+  --Folder: rgb(158, 158, 158);
+  --Button: rgb(146, 139, 139);
+  --Sub-Buttons: rgb(232, 232, 235);
+  --Body: rgb(16, 1, 1);
+  --Border: rgb(236, 227, 227);
+  --Text-Color: rgb(200, 14, 116);
 }
 
+:root{ /*Change only if you want Specific things to be diff color*/
+  /* --Catgory-Channel-Text-Color: ; */
+  /* --Channel-Text-Color: ; */
 
-/* Main Text Color
-   channel, header, tab, and chat text*/
-[class*="markup"],
+  /* --DM-List-Body: ; */
+  /*--Friend-List-Body: ;*/
+  /* --Chat-Body: ;
+
+  /* --Channel-Body: ; */
+  /* --Channel-Border: ; */
+  /* --Channel-Icon: ; */
+
+  /* --Folder-Icon: ; */
+  /* --Folder-Group-Border: ; */
+
+  /* --Button-Icon: ; */
+  /* --Dm-Button-Icon: ; */
+  /* --Dm-Button-Background: ; */
+  /* --Server-Discover-Button: ; */
+
+  /* --Member-List-Body: ; */
+  /* --Member-List-Profile-Body: ; */
+
+  /*--Server-List-Border: ; */
+
+  /* --Search-Bar-Body: ; */
+  /* --Search-Bar-Border: ; */
+  /* --Server-Name-Header-Border: ; */
+  /* --Server-Name-Header-Body: ; */
+  /* --Server-List-Body: ; */
+  /* --Search-Convoerstar-Header-Border: ; */
+  /* --Search-Convoerstar-Header-body: ; */
+  /* --Search-Tab-Body: ; */
+  /* --Search-Tab-Header-Body: ; */
+
+  
+  /* --Msg-Bar: ; */
+  /* --Msg-Bar-Border: ; */
+  /* --Button-Padding-In-Msg-Bar-Add-Color */
+
+
+  /* --Main--Header-Border: ; */
+  /* --Main--Header-Body: ;  */
+  /* --Main-Discord-Header-Body: ; */
+  /* --Main-Discord-Header-Border: ; */
+
+  /* --Main-Little-Profile-Bottom-Left-Bod: ; */
+  /* --Sub-Little-Profile-Bottom-Left-Body: ; */
+
+  /* --Background-For-Deafing-and-Setting: ; */
+  /* --Spofity-Panel-Body: ; */
+
+
+  /* --Setting-Side-Body: ; */
+  /* --Setting-Side-Border: ; */
+  /* --Setting-Content-Body: ; */
+  /* --Setting-Content-Border: ; */
+  /* --Setting-Header-Body: ; */
+  /* --Setting-Header-Border: ; */
+}
+
+/*Text*/
+/*ADD MORE LATER*/
+
+.name__2ea32.overflow_b0dfc2{ /*Channel Text Color*/
+  color: var(--Channel-Text-Color, var(--Text-Color));
+}
+.overflow_b0dfc2{ /*Channel catgory Text Color*/
+  color: var(--Catgory-Channel-Text-Color, var(--Text-Color));
+}
+
+[class*="markup"],  /*Code from my other theme, i am using for now*/
 [class*="headerText"],
 [class*="heading"],
 [class*="defaultColor"],
@@ -31,80 +98,248 @@
 [class*="text-sm"],
 [class*="text-md"],
 [class*="text-lg"]{
-  color: var(--Main-Text-Color);
+  color: var(--Text-Color);
 }
 
-/* Profile Text color
-   This change status, bio & username color*/
-[class*="outer_"] [class*="markup"] *,
-[class*="outer_"] [class*="text"]{
-  color: var(--Profile-Text-Color);
+
+
+/*Folders*/
+
+.folderIcon__48112{   /*Folder background*/
+  background-color: var(--Folder);
+}
+.folderGroupBackground__48112{  /*Border Of Folders*/
+    border-color: var(--Folder-Group-Border, var(--Border));
+}
+.folderIcon__48112 path{   /*Icon of Server Folder*/
+  fill: var(--Folder-Icon, var(--Icons));
 }
 
-/*Thsi change the color of main body*/
-[class*="sidebar"],
-[class*="chatContent"],
-[class*="guilds"],
-[class*="privateChannels"],
-[class*="memberInner"],
-[class*="member_c"],
-[class*="members"],
-[class*="peopleColumn"],
-[class*="tabBody"],
-[class*="panels"],
-[class*="themedBackground"],
-[class*="search"],
-[class*="searchResult"],
-[class*="sidebarList"] [class*="scroller"],
-[class*="container"][class*="themed"],
-[class*="nowPlayingColumn"],
-[class*="scroller_"],
-[class*="contentHeader"]
-[class*="panels"],
-[class*="channelTextArea"],
-#vc-spotify-player{
-  background-color: var(--Body-Background-Color);
+
+
+/*Buttons*/
+
+.circleIcon__5bc7e path{  /*Buttons Icon*/
+  fill: var(--Button-Icon, var(--Icons));
 }
 
-/*Let us be able to see serveer banners*/
-[class*="sidebarList"] > [class*="container"],
-[class*="sidebarList"] [class*="scroller"],
-[class*="sidebarList"] [class*="header"]{
-  background-color: transparent !important;
+.buttonChildrenWrapper_a22cb0{  /*Lot of Sub Buttons*/
+  background-color: var(--Sub-Buttons);
 }
 
-/*Colors of Discords Border*/
-[class*="sidebar"],
-[class*="title"],
-[class*="panels"],
-[class*="searchBar"],
-[class*="container_c"],
-[class*="header"],
-[role*="separator"],
-[class*="channelTextArea"],
-[class*="chat"][class*="chat"],
-[class*="page__5e434"] [class*="container__"]{
-  border-color: var(--Discord-Borders-Colors);
+.childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8{  /*The DM Button*/
+  background-color: var(--Dm-Button-Background, var(--Button));
+}
+.childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 path{  /*Icon of DM button*/
+  fill: var(--Dm-Button-Icon, var(--Icons));
 }
 
-/*Just the Backgroud of Server folder*/
-[class*="folderIconWrapper"]{
-  background-color: var(--Server-Folders-Colors);
+.buttonChildrenWrapper_a22cb0{  /*Find a Friend or Star a converstion Button/Search Body*/
+  background-color: var(--Find-a-Friend-or-Start-converstion-Button, var(--Button));
+}
+.searchBar_e6b769{  /*Find or start a convo Header Area*/
+  background-color: var(--Search-Convoerstar-Header-Body, var(--Body));
+  border-color: var(--Search-Convoerstar-Header-Border, var(--Border));
 }
 
-/*Background Color of the 'Discover' 'add server' and The DM button*/
-[class*="guilds"] [class*="circleIconButton"] {
-  background-color: var(--Buttons-Colors);
+.circleIconButton__5bc7e{   /*Server & Discover Buttons background*/
+background-color: var(--Server-Discover-Button, var(--Button));
 }
 
-/*Whenever you hover over a button*/
-[class*="guilds"] [class*="wrapper"]:hover [class*="childWrapper"],
-[class*="guilds"] [class*="circleIconButton"]:hover{
-  background-color: var(--Button-Hover-Color);
+.button_e6e74f{ /*Make a Color Padding for Emoji in the msg bar*/
+    background-color: var(--Button-Padding-In-Msg-Bar-Add-Color);
+    border-radius: 20%;
+}
+.expression-picker-chat-input-button{ /*Make a Color Padding for Emoji in the msg bar*/
+    background-color: var(--Button-Padding-In-Msg-Bar-Add-Color);
+    border-radius: 20%;
+}
+.container__5287f{ /*Make a Color Padding for Emoji in the msg bar*/
+    background-color: var(--Button-Padding-In-Msg-Bar-Add-Color);
+    border-radius: 20%;
 }
 
-/*Color of Logos*/
-[class*="button"] svg,
-[class*="tab"] svg{
-  color: var(--Logos-Colors);
+
+/*-------------NOTE TO SELF, add the other vc button & mute-------*/
+.buttons__37e49 .enabled__67645 { /*Make a Color Padding for Deafing & Setting Button*/
+  background-color: var(--Background-For-Deafing-and-Setting);
 }
+
+
+/*Server Member List*/
+
+.members_c8ffbb{  /*Member list body*/
+  background-color: var(--Member-List-Body, var(--Body));
+}
+.member__5d473{ /*Member List Profile body*/
+  background-color: var(--Member-List-Profile-Body, var(--Body));
+}
+.container_c8ffbb{  /*Memeber List Border*/
+  border-color: var(--Member-List-Border, var(--Border));
+}
+
+
+
+/*Channel List*/
+
+.scroller__629e4{ /*Channel List Body*/
+  background-color: var(--Channel-Body, var(--Body));
+}
+.icon__2ea32 path{  /*Channel List Icons*/
+  fill: var(--Channel-Icon, var(--Icons));
+}
+.sidebarResizeHandle__5e434{ /*Channel Border*/
+  background-color: var(--Channel-Border, var(--Border));
+  width: 1px;
+}
+
+
+
+/*MSG Bar*/
+
+.scrollableContainer__74017.themedBackground__74017{ /*Msg Bar Body*/
+  background-color: var(--Msg-Bar, var(--Body));
+}
+.channelTextArea_f75fb0{  /*Msg Bar Border*/
+  border-color: var(--Msg-Bar-Border, var(--Border));
+}
+
+
+
+/*Body/Border That is not already in a catgory*/
+
+.chatContent_f75fb0{ /*Chat Body*/
+  background-color: var(--Chat-Body, var(--Body));
+}
+
+.chat_f75fb0{  /*Header border*/
+  border-color: var(--Main-Discord-Header-Border, var(--Border));
+}
+
+.wrapper_ef3116{  /*Server list Body*/
+  background-color: var(--Server-List-Body, var(--Body));
+}
+
+.sidebarList__5e434.sidebarListRounded__5e434{ /*Server List border*/
+  border-color: var(--Server-List-Border, var(--Border));
+}
+
+.bar_c38106{ /*Very top header*/
+  background-color: var(--Main-Discord-Header-Body, var(--Body));
+}
+
+.header_f37cb1{  /*Server Header Area*/
+  background-color: var(--Server-Name-Header-Body, var(--Body));
+  border-color: var(--Server-Name-Header-Border, var(--Border));
+}
+
+.container__9293f.themed__9293f{ /*DM, Chat Body/Border*/
+  background-color: var(--Main-Header-Body, var(--Body));
+  border-color: var(--Main--Header-Border, var(--Border));
+}
+.scroller__99e7c{   /*Dm List Body*/
+    background-color: var(--DM-List-Body, var(--Body));
+} 
+
+.icon__2ea32 path{  /*Channel Icons*/
+  fill: var(--Channel-Icon, var(--Icons));
+}
+
+.peopleColumn__133bf{ /*Friends List Body*/
+  background-color: var(--Friend-List-Body, var(--Body));
+}
+
+.wrapper_e131a9{  
+  background-color: var(--Body);
+}
+
+.sidebar__409aa{  /* Setting Body*/
+  background-color: var(--Setting-Side-Body, var (var(--Body)));
+  border-color: var(--Setting-Side-Border, var (var(--Border)));
+}
+.scroller__6131a{ /*Setting Content Body*/
+  background-color: var(--Setting-Content-Body, var (var(--Body)));
+  border-color: var(--Setting-Content-Border, var (var(--Border)));
+}
+.contentHeader_e9e3ed{  /*Setting Header Body*/
+  border-color: var(--Setting-Header-Body, var (var(--Body)));
+  border-color: var(--Setting-Header-Border, var (var(--Border)));
+}
+
+/*Emoji/Sticker/Gif Border & background*/
+.contentWrapper__08434 { 
+  background-color: var(--Body);
+  border-color: var(--Border);
+}
+.container_d02962{
+  background-color: var(--Body);
+}
+.header_fed6d3{
+  border: var(--Border);
+  background-color: var(--Body);
+}
+.header__8ef02{
+  background-color: var(--Body);
+}
+.wrapper__72c38{
+  border-color: var(--Border);
+}
+.wrapper__14245{
+  background-color: var(--Body);
+}
+.scroller_affa7e{
+  background-color: var(--Body);
+}
+.inspector_aeaaeb{
+  background-color: var(--Body);
+}
+.standardStickerShortcut__3ad28{
+  background-color: var(--Body);
+}
+.unicodeShortcut_b9ee0c{
+  background-color: var(--Body);
+}
+
+.panels__5e434{ /*Edit the thing above ur profile like spofity*/
+  background-color: var(--Spofity-Panel-Body, var(--Body))
+}
+
+
+/*Profile Area*/
+
+.container__37e49{ /*Little Profile Bottom Left*/
+  background-color: var(--Main-Little-Profile-Bottom-Left-Body, var(--Body));
+}
+.panels__5e434{ /*Profile Border*/
+  border-color: var(--Main-Little-Profile-Bottom-Left-Border, var(--Border));
+}
+
+.sidebar__5e434{ /*This change the Background, behind the Little Profile Bottom Left*/
+  background-color: var(--Sub-Little-Profile-Bottom-Left-Body, var(--Main-Little-Profile-Bottom-Left-Body, var(--Body)));
+  &::after{
+    background-color: var(--Sub-Little-Profile-Bottom-Left-Body, var(--Main-Little-Profile-Bottom-Left-Body, var(--Body)));
+  }
+}
+.container__2637a{
+  background-color: var(--Sub-Little-Profile-Bottom-Left-Body, var(--Main-Little-Profile-Bottom-Left-Body, var(--Body)));
+}
+
+
+
+/*Search*/
+
+.searchBar_c322aa.searchBar__25bec{ /*Search bar (One to look for msges)*/
+  background-color: var(--Search-Bar-Body, var(--Body));
+  border-color: var(--Search-Bar-Border, var(--Border));
+}
+
+.scroller_a98f3b{ /*When you search a msg the tab that pop up*/
+  background-color: var(--Search-Tab-Body, var(--Body));
+}
+.searchHeader_ae7890{ /*When your search a msg the this is the header*/
+  background-color: var(--Search-Tab-Header-Body, var(--Body));
+}
+
+
+
+/*code is not done*/
