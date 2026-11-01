@@ -1,8 +1,9 @@
 :root{  /*Easy recolor your discord using this*/
   --Icons: #fff;
-  --Folder: Blue;
+  --Folder: rgb(70, 5, 18);
   --Button: red;
-  --Body: rgb(179, 55, 55);
+  --Sub-Buttons: blue;
+  --Body: rgb(7, 0, 0);
   --Border: White;
 }
 
@@ -33,59 +34,95 @@
   --Search-Convoerstar-Header-body: ;
   --Search-Tab-Body: ;
   --Search-Tab-Header-Body: ;
-  --Search-filters-Sort-Buttons: ;
+  --Folder-Group-Border: ;
+  --Main-Little-Profile-Bottom-Left-Bod: ;
+  --Sub-Little-Profile-Bottom-Left-Body: ;
+  --Main-Discord-Header-Border
+  --Channel-Border
+  Server-List-Border
+  --DM-List-Body
   */
 }
 
 
 
-
-.icon__2ea32 path{  /*This is the icon for like channel*/
-  fill: var(--Channel-Icon, var(--Icons));
-}
+/*Folders*/
 
 .folderIcon__48112{   /*Folder background*/
   background-color: var(--Folder);
 }
 
-.folderIcon__48112 path{   /*Change the icon of the folder*/
+.folderGroupBackground__48112{  /*Border Of Folders*/
+    border-color: var(--Folder-Group-Border, var(--Border))
+}
+
+.folderIcon__48112 path{   /*Icon of Server Folder*/
   fill: var(--Folder-Icon, var(--Icons));
 }
 
-.childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8{  /*like the dm home button background*/
-  background-color: var(--Dm-Button-Background, var(--Button))
+
+
+/*Buttons*/
+.buttonChildrenWrapper_a22cb0{  /*Lot of Sub Buttons*/
+  background-color: var(--Sub-Buttons)
 }
 
-.childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 path{  /*The icon of the home button*/
+.childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8{  /*The DM Button*/
+  background-color: var(--Dm-Button-Background, var(--Button));
+}
+
+.childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8 path{  /*Icon of DM button*/
   fill: var(--Dm-Button-Icon, var(--Icons));
 }
 
-.chatContent_f75fb0{ /* chat body*/
-  background-color: var(--Chat-Body, var(--Body))
+.icon__2ea32 path{  /*Channel Icons*/
+  fill: var(--Channel-Icon, var(--Icons));
 }
+
+.buttonChildrenWrapper_a22cb0{  /*Find a Friend or Star a converstion Button/Search Body*/
+  background-color: var(--Find-a-Friend-or-Start-converstion-Button, var(--Button));
+}
+
+
+
+/*Server Member List*/
 
 .members_c8ffbb{  /*Member list body*/
   background-color: var(--Member-List-Body, var(--Body))
 }
-.member__5d473{ /*member profile body idk*/
+
+.member__5d473{ /*Member List Profile body*/
   background-color: var(--Member-List-Profile-Body, var(--Body))
 }
-.container_c8ffbb{  /*border for member list*/
+
+.container_c8ffbb{  /*Memeber List Border*/
   border-color: var(--Member-List-Border, var(--Border))
 }
 
-.scroller__629e4{ /*channel list*/
+
+
+
+/*Channel List*/
+
+.scroller__629e4{ /*Channel List Body*/
   background-color: var(--Channel-Body, var(--Body))
 }
 
-.scrollableContainer__74017.themedBackground__74017{ /*msg bar*/
-  background-color: var(--Msg-Bar, var(--Body))
-}
-.channelTextArea_f75fb0{  /*msg bar border*/
-  border-color: var(--Msg-Bar-Border, var(--Border))
+.icon__2ea32 path{  /*Channel List Icons*/
+  fill: var(--Channel-Icon, var(--Icons));
 }
 
-.circleIconButton__5bc7e{   /*Buttons background*/
+.sidebarResizeHandle__5e434{ /*Channel Border*/
+  background-color: var(--Channel-Border, var(--Border))
+  width: 1px;
+}
+
+
+
+
+
+/*Buttons*/
+.circleIconButton__5bc7e{   /*Server & Discover Buttons background*/
 background-color: var(--Server-Discover-Button, var(--Button))
 }
 
@@ -93,93 +130,83 @@ background-color: var(--Server-Discover-Button, var(--Button))
   fill: var(--Button-Icon, var(--Icons));
 }
 
-
-.header_f37cb1{  /*server like header like the name area*/
-  background-color: var(--Server-Name-Header-Body, var(--Body));
-  border-color: var(--Server-Name-Header-Border, var(--Border));
+.buttonChildrenWrapper_a22cb0{  /*Lot of Sub Buttons*/
+  background-color: var(--Sub-Buttons, var(--Button))
 }
 
 
-.container__9293f.themed__9293f{ /*so in friend dm it would be there name, call button like all the button & in server just like top bar with pinned msg and stuff*/
-  background-color: var(--Main-Header-Body, var(--Body));
-  border-color: var(--Main--Header-Border, var(--Border));
+/*MSG Bar*/
+
+
+.scrollableContainer__74017.themedBackground__74017{ /*Msg Bar Body*/
+  background-color: var(--Msg-Bar, var(--Body))
+}
+
+.channelTextArea_f75fb0{  /*Msg Bar Border*/
+  border-color: var(--Msg-Bar-Border, var(--Border))
 }
 
 
-.wrapper_ef3116{  /*Server list*/
+
+
+
+/*Body/Border That is not already in a catgory*/
+
+.chatContent_f75fb0{ /*Chat Body*/
+  background-color: var(--Chat-Body, var(--Body))
+}
+
+.chat_f75fb0{  /*Header border*/
+  border-color: var(--Main-Discord-Header-Border, var(--Border))
+}
+
+.wrapper_ef3116{  /*Server list Body*/
   background-color: var(--Server-List-Body, var(--Body));
 }
 
-.sidebarList__5e434.sidebarListRounded__5e434{ /*Server border*/
-  border-color: #fff;
-}
-.sidebar__5e434{  /*put same root as server in this one */
-}
-
-
-.chat_f75fb0{  /*header border*/
-  border-color: #fff !important;
+.sidebarList__5e434.sidebarListRounded__5e434{ /*Server List border*/
+  border-color: var(--Server-List-Border, var(--Border))
 }
 
 .bar_c38106{ /*Very top header*/
   background-color: var(--Main-Discord-Header-Body, var(--Body));
 }
 
-
-
-/*edit the find or start a converstion button*/
-.buttonChildrenWrapper_a22cb0{
-  background-color: #;    /*DO lATER*/
+.header_f37cb1{  /*Server Header Area*/
+  background-color: var(--Server-Name-Header-Body, var(--Body));
+  border-color: var(--Server-Name-Header-Border, var(--Border));
 }
 
-
-.scroller__99e7c{ /*Dm list*/
-  background-color: var(--Dm-list-Body, var(--Body));
-  border-color: var(--Dm-list-Border, var(--Border));
+.container__9293f.themed__9293f{ /*DM, Chat Body/Border*/
+  background-color: var(--Main-Header-Body, var(--Body));
+  border-color: var(--Main--Header-Border, var(--Border));
 }
 
-.scroller_a98f3b{ /*When you search a msg the tab that pop up*/
-  background-color: var(--Search-Tab-Body, var(--Body));
-}
-.searchHeader_ae7890{
-  background-color: var(--Search-Tab-Header-Body, var(--Body));
-}
-
-.buttonChildrenWrapper_a22cb0{  /*in seach tab the filter & sort button*/
-  background-color: var(--Search-filters-Sort-Buttons, var(--Button))
-}
-
-
-.wrapper_e131a9{
-  border-color: #fff !important;
-}
-
-.sidebarResizeHandle__5e434{ /*weird border*/
-  background-color: rgb(255, 255, 255);
-  width: 1px;
-}
-
+.scroller__99e7c{   /*Dm List Body*/
+    background-color: var(--DM-List-Body, var(--Body))
+} 
 
 
 /*Profile Area*/
 
-
 .container__37e49{ /*Little Profile Bottom Left*/
-  background-color: red;
+  background-color: var(--Main-Little-Profile-Bottom-Left-Body, var(--Body));
 }
+
 .panels__5e434{ /*Profile Border*/
-  border-color: #fff;
+  border-color: var(--Main-Little-Profile-Bottom-Left-Border, var(--Border));
 }
-/*NOTE EDIT THIS*/
+
 .sidebar__5e434{ /*This change the Background, behind the Little Profile Bottom Left*/
-  background-color: red;
+  background-color: var(--Sub-Little-Profile-Bottom-Left-Body, var(--Body));
   &::after{
-    background-color: red;
+    background-color: var(--Sub-Little-Profile-Bottom-Left-Body, var(--Body));
+  }
+  &.container__2637a{
+    background-color: var(--Sub-Little-Profile-Bottom-Left-Body, var(--Body));
   }
 }
-.container__2637a{  /*weird body*/
-  background-color: red;
-}
+
 
 
 /*Search*/
@@ -193,5 +220,14 @@ background-color: var(--Server-Discover-Button, var(--Button))
   background-color: var(--Search-Convoerstar-Header-Body, var(--Body));
   border-color: var(--Search-Convoerstar-Header-Border, var(--Border));
 }
+
+.scroller_a98f3b{ /*When you search a msg the tab that pop up*/
+  background-color: var(--Search-Tab-Body, var(--Body));
+}
+.searchHeader_ae7890{ /*When your search a msg the this is the header*/
+  background-color: var(--Search-Tab-Header-Body, var(--Body));
+}
+
+
 
 /*code is not doen*/
