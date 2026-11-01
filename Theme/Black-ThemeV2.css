@@ -9,18 +9,21 @@
 
 
 :root{  /*Easy recolor your discord using this*/
-  --Icons: #b7f400;
-  --Folder: rgb(70, 5, 18);
-  --Button: red;
-  --Sub-Buttons: blue;
-  --Body: rgb(7, 0, 0);
-  --Border: White;
+  --Icons: #e1e1e1;
+  --Folder: rgb(158, 158, 158);
+  --Button: rgb(146, 139, 139);
+  --Sub-Buttons: rgb(232, 232, 235);
+  --Body: rgb(16, 1, 1);
+  --Border: rgb(236, 227, 227);
+  --Text-Color: rgb(214, 209, 209);
 }
 
 :root{ /*Change only if you want Specific things to be diff color*/
-
+  /* --Catgory-Channel-Text-Color: ; */
+  /* --Channel-Text-Color: ; */
 
   /* --DM-List-Body: ; */
+  /*--Friend-List-Body: ;*/
   /* --Chat-Body: ; */
 
   /* --Channel-Body: ; */
@@ -63,6 +66,18 @@
 
   /* --Main-Little-Profile-Bottom-Left-Bod: ; */
   /* --Sub-Little-Profile-Bottom-Left-Body: ; */
+
+  /* --Background-For-Deafing-and-Setting: ; */
+}
+
+
+/*ADD MORE LATER*/
+
+.name__2ea32.overflow_b0dfc2{ /*Channel Text Color*/
+  color: var(--Channel-Text-Color, var(--Text-Color));
+}
+.overflow_b0dfc2{ /*Channel catgory Text Color*/
+  color: var(--Catgory-Channel-Text-Color, var(--Text-Color));
 }
 
 
@@ -124,19 +139,22 @@ background-color: var(--Server-Discover-Button, var(--Button));
     border-radius: 20%;
 }
 
-.enabled__67645 { /*Make a Color Padding for Deafing & Setting Button*/
-    background-color: #b7f400;
-    fill: yellow;
+
+/*NOTE TO SELF, add the other vc button & mute*/
+.buttons__37e49 .enabled__67645 { /*Make a Color Padding for Deafing & Setting Button*/
+  background-color: var(--Background-For-Deafing-and-Setting);
 }
 
 
 
 
 
-/*Note to self when contuing working on this star here with the mute deafing & setting first as well fix the main discord header border, its 1:30am im gonna sleep*/
-.contents__201d5 .lottieIcon__5eb9b.lottieIconColors__5eb9b path{
-    fill: aqua;
-}
+
+
+
+
+
+
 
 /*Server Member List*/
 
@@ -197,7 +215,7 @@ background-color: var(--Server-Discover-Button, var(--Button));
 }
 
 .chat_f75fb0{  /*Header border*/
-  border-color: var(--Main-Discord-Header-Border, var(--Border))
+  border-color: var(--Main-Discord-Header-Border, var(--Border));
 }
 
 .wrapper_ef3116{  /*Server list Body*/
@@ -230,6 +248,48 @@ background-color: var(--Server-Discover-Button, var(--Button));
   fill: var(--Channel-Icon, var(--Icons));
 }
 
+.peopleColumn__133bf{ /*Friends List Body*/
+  background-color: var(--Friend-List-Body, var(--Body));
+}
+
+.wrapper_e131a9{
+  background-color: var(--Body)
+}
+
+
+/*Emoji/Sticker/Gif Border & background*/
+.contentWrapper__08434 { 
+  background-color: var(--Body);
+  border-color: var(--Border);
+}
+.container_d02962{
+  background-color: var(--Body);
+}
+.header_fed6d3{
+  border: var(--Border);
+  background-color: var(--Body);
+}
+.header__8ef02{
+  background-color: var(--Body);
+}
+.wrapper__72c38{
+  border-color: var(--Border);
+}
+.wrapper__14245{
+  background-color: var(--Body);
+}
+.scroller_affa7e{
+  background-color: var(--Body);
+}
+.inspector_aeaaeb{
+  background-color: var(--Body);
+}
+.standardStickerShortcut__3ad28{
+  background-color: var(--Body);
+}
+.unicodeShortcut_b9ee0c{
+  background-color: var(--Body);
+}
 
 
 /*Profile Area*/
@@ -247,9 +307,9 @@ background-color: var(--Server-Discover-Button, var(--Button));
   &::after{
     background-color: var(--Sub-Little-Profile-Bottom-Left-Body, var(--Main-Little-Profile-Bottom-Left-Body, var(--Body)));
   }
-  &.container__2637a{
-    background-color: var(--Sub-Little-Profile-Bottom-Left-Body, var(--Main-Little-Profile-Bottom-Left-Body, var(--Body)));
-  }
+}
+.container__2637a{
+  background-color: var(--Sub-Little-Profile-Bottom-Left-Body, var(--Main-Little-Profile-Bottom-Left-Body, var(--Body)));
 }
 
 
