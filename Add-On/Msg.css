@@ -13,20 +13,20 @@
 }
 
 /*Text bar when you do have permision to talk*/
-.channelTextArea__74017:not(.channelTextAreaDisabled__74017) .placeholder__1b31f{
+.channelTextArea_2x8-Qn:not(.channelTextAreaDisabled_2x8-Qn) .placeholder_SHcSVi{
   font-size: 0px;
 }
-.channelTextArea__74017:not(.channelTextAreaDisabled__74017) .placeholder__1b31f::before{
+.channelTextArea_2x8-Qn:not(.channelTextAreaDisabled_2x8-Qn) .placeholder_SHcSVi::before{
   content: var(--Allow-Msg-Text);
   font-size: 16px;
 }
 
 /*The msg in the textbar when your in a channel you don't have perm to speak in*/
-.channelTextAreaDisabled__74017 .placeholder__1b31f{
+.channelTextAreaDisabled_2x8-Qn .placeholder_SHcSVi{
   font-size: 0px;
 }
 
-.channelTextAreaDisabled__74017 .placeholder__1b31f::before{
+.channelTextAreaDisabled_2x8-Qn .placeholder_SHcSVi::before{
   content: var(--Disable-Msg-Text);
   font-size: 16px;
 }
